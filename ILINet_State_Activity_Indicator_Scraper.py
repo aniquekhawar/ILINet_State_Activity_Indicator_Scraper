@@ -42,8 +42,8 @@ def download_wait(directory, timeout, nfiles=None):
     return seconds
 
 def remove_csvs(parent_directory):
-    remove_zips = glob.glob(f'{parent_directory}/*.csv')
-    for filePath in remove_zips:
+    remove_csvs = glob.glob(f'{parent_directory}/*.csv')
+    for filePath in remove_csvs:
         try:
             os.remove(filePath)
             print(f'File at {filePath} removed successfully.')
@@ -82,7 +82,12 @@ download_wait(parent_directory, 300)
 
 browser.close()
 
-filename = glob.glob(f'{parent_directory}/*.csv')[0]
+try:
+    filename = glob.glob(f'{parent_directory}/*.csv')[0]
+except:
+    print('Unable to find CSV file. Waiting 30 seconds.')
+    time.sleep(30)
+    filename = glob.glob(f'{parent_directory}/*.csv')[0]
 print(filename)
 os.rename(filename, 'ilinet_state_activity_indicator_map_data.csv')
 filename2 = glob.glob(f'{parent_directory}/*.csv')[0]
