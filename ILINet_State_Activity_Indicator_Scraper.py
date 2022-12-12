@@ -56,7 +56,7 @@ opts.add_argument("--headless")
 opts.set_preference("browser.download.folderList", 2)
 opts.set_preference("browser.download.manager.showWhenStarting", False)
 opts.set_preference("browser.download.dir", parent_directory)
-opts.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/x-gzip")
+opts.set_preference("browser.helperApps.neverAsk.saveToDisk", "text/csv")
 
 browser = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options = opts)
 
