@@ -81,16 +81,18 @@ download_csv_btn_xpath = '//button[@ng-click="mainCtrl.getCsvFile()"]'
 browser.find_element('xpath', download_csv_btn_xpath).click()
 download_wait(parent_directory, 300)
 
-browser.close()
+
 
 try:
-    filename = glob.glob(f'{parent_directory}/*.csv')[0]
+    filename = glob.glob('./*.csv')[0]
 except:
     print('Unable to find CSV file. Waiting 30 seconds.')
     time.sleep(30)
-    filename = glob.glob(f'{parent_directory}/*.csv')[0]
+    filename = glob.glob('./*.csv')[0]
 print(filename)
 os.rename(filename, 'ilinet_state_activity_indicator_map_data.csv')
-filename2 = glob.glob(f'{parent_directory}/*.csv')[0]
+filename2 = glob.glob('./*.csv')[0]
 print(filename2)
+
+browser.close()
 print('Exiting program.')
