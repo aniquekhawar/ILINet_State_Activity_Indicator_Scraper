@@ -7,9 +7,8 @@ import glob
 import os
 
 # commands to get the current directory (which is usually the directory to the Git Repository)
-# parent_directory = os.path.dirname(os.path.realpath(__file__))
-# print(parent_directory)
-parent_directory = r'/home/runner/work/ILINet_State_Activity_Indicator_Scraper/ILINet_State_Activity_Indicator_Scraper'
+parent_directory = os.path.dirname(os.path.realpath(__file__))
+print(parent_directory)
 
 # function from Stackoverflow Article User Austin Mackillop @ https://stackoverflow.com/a/51949811
 def download_wait(directory, timeout, nfiles=None):
