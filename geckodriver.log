@@ -81,3 +81,24 @@ DevTools listening on ws://127.0.0.1:56181/devtools/browser/0aa7cdc5-fe16-4afa-9
 
 (firefox:1769): GLib-GObject-CRITICAL **: 14:17:21.270: g_object_get: assertion 'G_IS_OBJECT (object)' failed
 1671027465349	Marionette	INFO	Stopped listening on port 40819
+1671113852086	geckodriver	INFO	Listening on 127.0.0.1:50211
+1671113852679	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "41147" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileUINjiM"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1671113872294	Marionette	INFO	Marionette enabled
+1671113872364	Marionette	INFO	Listening on port 34845
+Read port: 34845
+Read port: 34845
+Read port: 34845
+Read port: 34845
+WebDriver BiDi listening on ws://127.0.0.1:41147
+1671113876253	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUINjiM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:41147/devtools/browser/46bcc5c4-a651-4711-8482-fd58a0aaefa6
+ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
+[Parent 1806, Main Thread] WARNING: g_object_get: assertion 'G_IS_OBJECT (object)' failed: 'glib warning', file /build/firefox-ew3Aol/firefox-108.0+build2/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox:1806): GLib-GObject-CRITICAL **: 14:18:40.382: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1671113945307	Marionette	INFO	Stopped listening on port 34845
+ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
