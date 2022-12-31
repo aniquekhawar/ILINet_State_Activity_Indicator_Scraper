@@ -1690,3 +1690,22 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Pha
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1672496058911	geckodriver	INFO	Listening on 127.0.0.1:50609
+1672496059472	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "35767" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezNECUX"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1672496067608	Marionette	INFO	Marionette enabled
+1672496067625	Marionette	INFO	Listening on port 44911
+Read port: 44911
+Read port: 44911
+WebDriver BiDi listening on ws://127.0.0.1:35767
+1672496069152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezNECUX/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:35767/devtools/browser/335faacf-9251-463c-a14d-23b4e7c98a69
+ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
+[Parent 1827, Main Thread] WARNING: g_object_get: assertion 'G_IS_OBJECT (object)' failed: 'glib warning', file /build/firefox-ew3Aol/firefox-108.0+build2/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox:1827): GLib-GObject-CRITICAL **: 14:14:57.777: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1672496126093	Marionette	INFO	Stopped listening on port 44911
+ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
